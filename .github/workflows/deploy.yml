@@ -4,7 +4,8 @@ on: [push]
 
 jobs:
   build:
-    runs-on: image: maven:3.8.6-openjdk-18
+    runs-on: 
+        image: maven:3.8.6-openjdk-18
     steps:
       - name: Rodando um script shell
         run: echo "Pipeline gitactions"
