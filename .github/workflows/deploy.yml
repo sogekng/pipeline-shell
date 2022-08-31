@@ -7,4 +7,9 @@ jobs:
     runs-on: image: maven:3.8.6-openjdk-18
     steps:
       - name: Rodando um script shell
-        run: echo "Pipeline gitactions"
+        run: mvn package -Dmaven.test.skip
+  teste:
+    runs-on: image: maven:3.8.6-openjdk-18
+    steps:
+      - name: Rodando um script shell
+        run: mvn package
